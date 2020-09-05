@@ -25,7 +25,7 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="" id="aDb-YV-n6I">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="GridCell" id="aDb-YV-n6I" customClass="GridCell" customModule="BountyList" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="200" height="350"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
@@ -62,6 +62,11 @@
                                             <constraint firstItem="rtx-k0-Tiu" firstAttribute="top" secondItem="qVK-Gw-xTo" secondAttribute="bottom" constant="10" id="qsE-eC-sNu"/>
                                         </constraints>
                                         <size key="customSize" width="200" height="350"/>
+                                        <connections>
+                                            <outlet property="bountyLabel" destination="RXe-BA-bIC" id="0GZ-oO-dCB"/>
+                                            <outlet property="imgView" destination="qVK-Gw-xTo" id="xKL-fB-Q4a"/>
+                                            <outlet property="nameLabel" destination="rtx-k0-Tiu" id="vrs-HL-Kin"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
                                 <connections>
@@ -141,8 +146,10 @@
                     </view>
                     <connections>
                         <outlet property="bountyLabel" destination="kKN-xY-7G9" id="E13-7A-EwO"/>
+                        <outlet property="bountyLabelCenterX" destination="jf8-f4-7X9" id="JSc-B2-2og"/>
                         <outlet property="imgView" destination="sr6-gc-r0J" id="CHR-oH-rKw"/>
                         <outlet property="nameLabel" destination="e1b-UZ-AIV" id="7D9-yh-Rnu"/>
+                        <outlet property="nameLabelCenterX" destination="F33-vl-Xbr" id="3g5-6l-t0y"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3RE-ob-pmi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
